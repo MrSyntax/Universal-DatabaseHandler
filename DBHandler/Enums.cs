@@ -23,6 +23,14 @@ namespace DBHandler
     public enum DatabaseType
     {
         MSSQL,
-        MYSQL
+        MYSQL,
+        POSTGRESQL,
+        ORACLEDB,
+        SQLITE,
+        MONGODB,
+        DB2,
+        SYBASE,
+        TERADATA,
+        CASSANDRA
     }
 }
