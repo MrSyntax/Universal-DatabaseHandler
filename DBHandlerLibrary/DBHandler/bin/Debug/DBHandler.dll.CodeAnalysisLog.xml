@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="C:\Users\Admin\Desktop\DBHandler\DBHandler\bin\Debug\DBHandler.dll">
+   <Modules>
+    <Module Name="dbhandler.dll">
+     <Namespaces>
+      <Namespace Name="DBHandler">
+       <Types>
+        <Type Name="DataBaseHandler" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(DBHandler.DatabaseType,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-04-19 17:48:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandler.cs" Line="62">'DataBaseHandler.DataBaseHandler(DatabaseType, string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SqlInsert(System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-04-19 17:48:31Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="58">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlInsert(object)' could contain the following variables 'tableName', 'cmdtext'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="73">The query string passed to 'SQLiteCommand.CommandText.set(string)' in 'DataBaseHandler.SqlInsert(object)' could contain the following variables 'tableName', 'cmdtext'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="43">The query string passed to 'SqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlInsert(object)' could contain the following variables 'tableName', 'cmdtext'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SqlRemove(System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-04-19 17:48:31Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="407">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlRemove(object)' could contain the following variables 'tableName', 'commandtext'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="421">The query string passed to 'SQLiteCommand.CommandText.set(string)' in 'DataBaseHandler.SqlRemove(object)' could contain the following variables 'tableName', 'commandtext'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="393">The query string passed to 'SqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlRemove(object)' could contain the following variables 'tableName', 'commandtext'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SqlSelect(System.Type,System.Collections.Generic.KeyValuePair`2&lt;System.String,System.Int32&gt;,System.Data.DataTable&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-04-19 17:48:31Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="263">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlSelect(Type, KeyValuePair&lt;string, int&gt;, out DataTable)' could contain the following variables 'DataBaseHandler.RegisteredTypes[objectType]', 'idColumnValue.Key', 'idColumnValue.Key'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="278">The query string passed to 'SQLiteCommand.CommandText.set(string)' in 'DataBaseHandler.SqlSelect(Type, KeyValuePair&lt;string, int&gt;, out DataTable)' could contain the following variables 'DataBaseHandler.RegisteredTypes[objectType]', 'idColumnValue.Key', 'idColumnValue.Key'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="248">The query string passed to 'SqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlSelect(Type, KeyValuePair&lt;string, int&gt;, out DataTable)' could contain the following variables 'DataBaseHandler.RegisteredTypes[objectType]', 'idColumnValue.Key', 'idColumnValue.Key'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SqlSelectAll(System.Type,System.Data.DataTable&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-04-19 17:48:31Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="126">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlSelectAll(Type, out DataTable)' could contain the following variables 'DataBaseHandler.RegisteredTypes[objectType]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="141">The query string passed to 'SQLiteCommand.CommandText.set(string)' in 'DataBaseHandler.SqlSelectAll(Type, out DataTable)' could contain the following variables 'DataBaseHandler.RegisteredTypes[objectType]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="112">The query string passed to 'SqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlSelectAll(Type, out DataTable)' could contain the following variables 'DataBaseHandler.RegisteredTypes[objectType]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SqlSelectSpecific(System.String,System.Collections.Generic.KeyValuePair`2&lt;System.String,System.Int32&gt;,System.Data.DataTable&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-04-19 17:48:31Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="188">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlSelectSpecific(string, KeyValuePair&lt;string, int&gt;, out DataTable)' could contain the following variables 'tableName', 'idColumnValue.Key', 'idColumnValue.Key'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="204">The query string passed to 'SQLiteCommand.CommandText.set(string)' in 'DataBaseHandler.SqlSelectSpecific(string, KeyValuePair&lt;string, int&gt;, out DataTable)' could contain the following variables 'tableName', 'idColumnValue.Key', 'idColumnValue.Key'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="172">The query string passed to 'SqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlSelectSpecific(string, KeyValuePair&lt;string, int&gt;, out DataTable)' could contain the following variables 'tableName', 'idColumnValue.Key', 'idColumnValue.Key'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SqlUpdate(System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-04-19 17:48:31Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="334">The query string passed to 'MySqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlUpdate(object)' could contain the following variables 'tableName', 'cmdtext'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="350">The query string passed to 'SQLiteCommand.CommandText.set(string)' in 'DataBaseHandler.SqlUpdate(object)' could contain the following variables 'tableName', 'cmdtext'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="DBHandlerCRUD.cs" Line="318">The query string passed to 'SqlCommand.CommandText.set(string)' in 'DataBaseHandler.SqlUpdate(object)' could contain the following variables 'tableName', 'cmdtext'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UniversalSQLHandler" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ExecuteStoredProcedure(System.String)" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-04-19 17:48:31Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="807">The query string passed to 'MySqlCommand.MySqlCommand(string)' in 'UniversalSQLHandler.ExecuteStoredProcedure(string)' could contain the following variables 'StoredProcedureName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="890">The query string passed to 'NpgsqlCommand.NpgsqlCommand(string)' in 'UniversalSQLHandler.ExecuteStoredProcedure(string)' could contain the following variables 'StoredProcedureName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="861">The query string passed to 'OracleCommand.OracleCommand(string)' in 'UniversalSQLHandler.ExecuteStoredProcedure(string)' could contain the following variables 'StoredProcedureName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="831">The query string passed to 'SQLiteCommand.SQLiteCommand(string)' in 'UniversalSQLHandler.ExecuteStoredProcedure(string)' could contain the following variables 'StoredProcedureName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="783">The query string passed to 'SqlCommand.SqlCommand(string)' in 'UniversalSQLHandler.ExecuteStoredProcedure(string)' could contain the following variables 'StoredProcedureName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetColumnSpecifics(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-04-19 17:48:31Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="229">'UniversalSQLHandler.GetColumnSpecifics(string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="285">'UniversalSQLHandler.GetColumnSpecifics(string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="315">'UniversalSQLHandler.GetColumnSpecifics(string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="345">'UniversalSQLHandler.GetColumnSpecifics(string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2015-04-19 17:48:31Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="239">The query string passed to 'MySqlCommand.MySqlCommand(string, MySqlConnection)' in 'UniversalSQLHandler.GetColumnSpecifics(string)' could contain the following variables 'tableName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="325">The query string passed to 'NpgsqlCommand.NpgsqlCommand(string, NpgsqlConnection)' in 'UniversalSQLHandler.GetColumnSpecifics(string)' could contain the following variables 'tableName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="295">The query string passed to 'OracleCommand.OracleCommand(string, OracleConnection)' in 'UniversalSQLHandler.GetColumnSpecifics(string)' could contain the following variables 'tableName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="269">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'UniversalSQLHandler.GetColumnSpecifics(string)' could contain the following variables 'tableName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Admin\Desktop\DBHandler\DBHandler" File="UniversalSQLHandler.cs" Line="208">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'UniversalSQLHandler.GetColumnSpecifics(string)' could contain the following variables 'tableName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>Rethrow to preserve stack details</Name>
+   <Description>Use the IL rethrow instruction to preserve original stack details when re-raising a caught exception.</Description>
+   <Resolution Name="Default">{0} rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

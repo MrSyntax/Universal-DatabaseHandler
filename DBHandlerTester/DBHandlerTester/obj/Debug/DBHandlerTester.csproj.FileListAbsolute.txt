@@ -1,0 +1,20 @@
+C:\Users\Admin\Desktop\Studie\DBHandlerTester\DBHandlerTester\bin\Debug\DBHandlerTester.exe.config
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\DBHandlerTester.exe.config
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\DBHandlerTester.exe
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\DBHandlerTester.pdb
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\DBHandler.dll
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\KledingWinkelLib.dll
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\KledingWinkelLib.pdb
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\obj\Debug\DBHandlerTester.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\obj\Debug\DBHandlerTester.Form1.resources
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\obj\Debug\DBHandlerTester.Properties.Resources.resources
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\obj\Debug\DBHandlerTester.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\obj\Debug\DBHandlerTester.exe
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\obj\Debug\DBHandlerTester.pdb
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\DBHandler.pdb
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\MySql.Data.dll
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\System.Data.SQLite.dll
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\Npgsql.dll
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\Mono.Security.dll
+C:\Users\Admin\Desktop\DBHandler Tester\DBHandlerTester\DBHandlerTester\bin\Debug\Npgsql.xml

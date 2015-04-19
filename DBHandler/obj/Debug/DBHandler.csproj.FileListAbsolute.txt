@@ -1,7 +1,0 @@
-C:\Users\Admin\Desktop\Studie\DBHandler\DBHandler\bin\Debug\DBHandler.dll
-C:\Users\Admin\Desktop\Studie\DBHandler\DBHandler\bin\Debug\DBHandler.pdb
-C:\Users\Admin\Desktop\Studie\DBHandler\DBHandler\obj\Debug\DBHandler.dll
-C:\Users\Admin\Desktop\Studie\DBHandler\DBHandler\obj\Debug\DBHandler.pdb
-C:\Users\Admin\Desktop\Studie\DBHandler\DBHandler\bin\Debug\MySql.Data.dll
-C:\Users\Admin\Desktop\Studie\DBHandler\DBHandler\bin\Debug\System.Data.SQLite.dll
-C:\Users\Admin\Desktop\Studie\DBHandler\DBHandler\obj\Debug\DBHandler.csprojResolveAssemblyReference.cache

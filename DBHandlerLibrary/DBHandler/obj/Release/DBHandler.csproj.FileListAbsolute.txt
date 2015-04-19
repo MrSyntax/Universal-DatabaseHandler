@@ -1,0 +1,4 @@
+C:\Users\Admin\Desktop\DBHandler\DBHandler\bin\Release\DBHandler.dll
+C:\Users\Admin\Desktop\DBHandler\DBHandler\bin\Release\DBHandler.pdb
+C:\Users\Admin\Desktop\DBHandler\DBHandler\obj\Release\DBHandler.dll
+C:\Users\Admin\Desktop\DBHandler\DBHandler\obj\Release\DBHandler.pdb
